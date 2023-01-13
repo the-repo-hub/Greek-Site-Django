@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+{%include 'blocks/head.html'%}
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            {%include 'blocks/sidebar.html'%}
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                {%include 'blocks/navbar.html'%}
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h2 class="mt-4">Как устроены времена в греческом</h2>
+                    <p> </p>
+                    <img src="{%static 'review/images/gr_tenses.png'%}" alt="Greek Tenses">
+                    <p>
+                        1. Υπερσυντέλικος - предпрошедшее время.<br><br>
+                         Оно в греческом языке обозначает событие, которое закончилось к определённому моменту в прошлом. Используется, когда в прошлом произошли два события. Событие, произошедшее раньше, обозначается Υπερσυντέλικος. Образуется с помощью вспомогательного глагола έχω в прошедшем времени и инфинитива смыслового глагола.
+                        <br><br>Пример: Ο Γιώργος μου είπε ότι είχε ήδη διαβάσει αυτό το βιβλίο — Джордж сказал мне, что уже прочитал эту книгу.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
