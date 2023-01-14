@@ -4,7 +4,8 @@ from .views import *
 urlpatterns = [
     path('', main_page),
     path('declinations/', declinations),
-    path('times/', times),
+    path('tenses/', times),
     path('cases/', cases),
-    path('phrases/', phrases)
+    path('phrases/', phrases),
+    path('tenses/υπερσυντέλικος/', ipersidelikos),
 ]

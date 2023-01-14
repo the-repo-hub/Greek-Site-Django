@@ -9,7 +9,7 @@ def declinations(r):
     return render(r, 'declination.html')
 
 def times(r):
-    return render(r, 'times.html')
+    return render(r, 'tenses.html')
 
 def cases(r):
     return render(r, 'cases.html')
@@ -17,4 +17,6 @@ def cases(r):
 def phrases(r):
     return render(r, 'phrases.html')
 
+def ipersidelikos(r):
+    return render(r, 'tenses/Υπερσυντέλικος.html')
 

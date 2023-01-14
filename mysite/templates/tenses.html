@@ -1,5 +1,5 @@
 {%include 'blocks/head.html'%}
-<html>
+<html lang="en">
     <body>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
@@ -10,8 +10,11 @@
                 {%include 'blocks/navbar.html'%}
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">Phrases here</h1>
-                    <p>Phrases</p>
+                    <h2 class="mt-4">Как устроены времена в греческом</h2>
+                <!-- Table -->
+                {%include 'blocks/tenses_table.html'%}
+                <!-- Text -->
+                {%include 'texts/tenses_text.html'%}
                 </div>
             </div>
         </div>
