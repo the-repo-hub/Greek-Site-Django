@@ -18,5 +18,13 @@ def phrases(r):
     return render(r, 'phrases.html')
 
 def ipersidelikos(r):
-    return render(r, 'tenses/Υπερσυντέλικος.html')
+    return render(r, 'texts/tenses/Υπερσυντέλικος.html')
 
+def aoristos(r):
+    return render(r, 'texts/tenses/Αόριστος.html')
+
+def paratatikos(r):
+    return render(r, 'texts/tenses/Παρατατικός.html')
+
+def enestotas(r):
+    return render(r, 'texts/tenses/Ενεστότας.html')

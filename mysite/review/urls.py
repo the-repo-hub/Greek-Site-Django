@@ -8,4 +8,7 @@ urlpatterns = [
     path('cases/', cases),
     path('phrases/', phrases),
     path('tenses/υπερσυντέλικος/', ipersidelikos),
+    path('tenses/αόριστος/', aoristos),
+    path('tenses/παρατάτικος/', paratatikos),
+    path('tenses/ενεστότας/', enestotas)
 ]

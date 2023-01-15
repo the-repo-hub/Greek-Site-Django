@@ -1,4 +1,5 @@
 {%include 'blocks/head.html'%}
+{%load static%}
 <html lang="en">
     <body>
         <div class="d-flex" id="wrapper">
@@ -10,11 +11,9 @@
                 {%include 'blocks/navbar.html'%}
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h2 class="mt-4">Как устроены времена в греческом</h2>
-                <!-- Table -->
-                {%include 'blocks/tenses_table.html'%}
-                <!-- Text -->
-                {%include 'texts/tenses_text.html'%}
+                    <h2 class="mt-4">Как устроены времена в греческом языке</h2>
+                    <!-- Table -->
+                    {%include 'blocks/tenses_tablev2.html'%}
                 </div>
             </div>
         </div>
