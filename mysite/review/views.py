@@ -28,3 +28,15 @@ def paratatikos(r):
 
 def enestotas(r):
     return render(r, 'texts/tenses/Ενεστότας.html')
+
+def parakimenos(r):
+    return render(r, 'texts/tenses/Παρακείμενος.html')
+
+def melonas_stigmiaos(r):
+    return render(r, 'texts/tenses/Μέλλοντας_στιγμιαίος.html')
+
+def melonas_diarkias(r):
+    return render(r, 'texts/tenses/Μέλλοντας_διαρκείας.html')
+
+def melonas_sidelemenos(r):
+    return render(r, 'texts/tenses/Μέλλοντας_συντελεσμένος.html')

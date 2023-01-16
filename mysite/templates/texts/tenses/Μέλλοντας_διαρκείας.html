@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+{%include 'blocks/head.html'%}
+<html>
+    <body>
+        <div class="d-flex" id="wrapper">
+            {%include 'blocks/sidebar.html'%}
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                {%include 'blocks/navbar.html'%}
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">Page</h1>
+                    <p>Page</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
