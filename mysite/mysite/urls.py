@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from review.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('review.urls')),
+    path('singup/', include('singup.urls')),
 ]
 
 #In development for Django to serve your static files, you have to include the static urls in your urls.py:
