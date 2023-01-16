@@ -1,21 +1,6 @@
-{%include 'blocks/head.html'%}
-{%load static%}
-<html lang="en">
-    <body>
-        <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
-            {%include 'blocks/sidebar.html'%}
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                {%include 'blocks/navbar.html'%}
-                <!-- Page content-->
-                <div class="container-fluid">
-                    <h2 class="mt-4">Как устроены времена в греческом языке</h2>
-                    <!-- Table -->
-                    {%include 'blocks/tenses_tablev2.html'%}
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+{%extends 'main.html'%}
+{%block content%}
+<h2 class="mt-4">Как устроены времена в греческом языке</h2>
+<!-- Table -->
+{%include 'blocks/tenses_tablev2.html'%}
+{%endblock%}

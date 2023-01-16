@@ -1,0 +1,18 @@
+{%include 'blocks/head.html'%}
+{%load static%}
+<html>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            {%include 'blocks/sidebar.html'%}
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+              {%include 'blocks/navbar.html'%}
+                <!-- Page content-->
+              {%block content%}
+              {%endblock%}
+            </div>
+        </div>
+    </body>
+</html>
