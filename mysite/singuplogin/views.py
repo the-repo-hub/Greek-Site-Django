@@ -2,7 +2,7 @@
 from django.shortcuts import  render, redirect
 from .forms import NewUserForm
 from django.contrib import messages
-from django.contrib.auth import login, authenticate #add this
+from django.contrib.auth import login, authenticate, logout #add this
 from django.contrib.auth.forms import AuthenticationForm #add this
 
 def singup_page(request):
@@ -15,7 +15,7 @@ def singup_page(request):
 			return redirect("/")
 		messages.error(request, "Unsuccessful registration. Invalid information.")
 	form = NewUserForm()
-	return render (request=request, template_name="singup/singup.html", context={"register_form":form})
+	return render (request=request, template_name="singuplogin/singup.html", context={"register_form":form})
 
 
 def login_page(request):
@@ -26,12 +26,17 @@ def login_page(request):
 			password = form.cleaned_data.get('password')
 			user = authenticate(username=username, password=password)
 			if user is not None:
+				print('Success login:\n', request)
 				login(request, user)
 				messages.info(request, f"You are now logged in as {username}.")
-				return redirect("main:homepage")
+				return redirect("/")
 			else:
 				messages.error(request,"Invalid username or password.")
 		else:
 			messages.error(request,"Invalid username or password.")
 	form = AuthenticationForm()
-	return render(request=request, template_name="login/login.html", context={"login_form":form})
+	return render(request=request, template_name="singuplogin/login.html", context={"login_form":form})
+
+def logout_page(request):
+	logout(request)
+	return redirect('/')
