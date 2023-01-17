@@ -1,14 +1,8 @@
 from django.shortcuts import render
-from django.contrib.auth import login, authenticate
-from singuplogin.forms import NewUserForm
 # Create your views here.
 
 
 def main_page(r):
-    if r.user.is_authenticated:
-        print('Yes, it is!')
-    else:
-        print('No!')
     return render(r, 'index.html')
 
 def declinations(r):

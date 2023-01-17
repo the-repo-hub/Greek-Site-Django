@@ -23,7 +23,7 @@ urlpatterns = [
     path('login/', login_page),
     path('singup/', singup_page),
     path('logout/', logout_page),
-
+    path('forum/', include('forum.urls')),
 ]
 
 #In development for Django to serve your static files, you have to include the static urls in your urls.py:
