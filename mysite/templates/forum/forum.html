@@ -1,8 +1,0 @@
-{%extends 'forum/main.html'%}
-{%block content%}
-{%for post in posts%}
-<p><a href="/forum/{{post.pk}}">{{post.head}} </a></p>
-{% endfor %}
-<a href="/">обратно </a>
-
-{%endblock%}
