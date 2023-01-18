@@ -4,5 +4,5 @@ from forum.views import *
 
 urlpatterns = [
     path('', forum_main_page),
-    path('<int:pk>', post_page)
+    path('<int:pk>', ViewPost.as_view())
 ]
