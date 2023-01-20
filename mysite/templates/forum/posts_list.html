@@ -3,4 +3,8 @@
 {%block content%}
 <h1>{{theme.head}}</h1>
 <p>{{theme.text}}</p>
+{%for post in posts%}
+<h2>{{author}} №{{post.pk}}</h2>
+<p>{{post.text}}</p>
+{%endfor%}
 {%endblock%}

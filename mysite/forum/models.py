@@ -26,7 +26,7 @@ class Post(models.Model):
     image = models.ImageField(blank=True, upload_to=upload_to)
 
     def __str__(self):
-        return self.text.split()[:5]
+        return self.text
 
     class Meta:
         verbose_name = 'Пост'
