@@ -1,0 +1,8 @@
+{%extends 'main.html'%}
+{%block content%}
+<h1>Themes List</h1>
+<button>Add new theme</button>
+{%for theme in themes%}
+<h2><a href="{{theme.get_absolute_url}}">{{theme.head}}</a></h2>
+{%endfor%}
+{%endblock%}

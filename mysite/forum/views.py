@@ -1,18 +1,18 @@
 from django.shortcuts import render
-from forum.models import Post
+from forum.models import *
 # Create your views here.
 from django.views.generic import ListView, DetailView
 
 
-def forum_main_page(r):
-    posts = Post.objects.all()
-    context = {'posts': posts}
-    return render(r, 'forum/forum.html', context=context)
+class ThemesList(ListView):
+    model = Theme
+    context_object_name = 'themes'
+    template_name = 'forum/themes_list.html'
 
-class ViewPost(DetailView):
-    model = Post
-    context_object_name = 'post' # context dictionary
-    template_name = 'forum/post.html'
+class ViewTheme(DetailView):
+    model = Theme
+    context_object_name = 'theme' # context dictionary
+    template_name = 'forum/theme.html'
 
 """def post_page(r, pk):
     post = Post.objects.get(pk=pk)
