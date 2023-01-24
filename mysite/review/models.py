@@ -26,3 +26,11 @@ class Tense(models.Model):
 
     def __str__(self):
         return self.tense
+
+class Sidebar(models.Model):
+    head = models.CharField(max_length=100)
+    link = models.CharField(max_length=150)
+
+    class Meta:
+        verbose_name = 'Сайдбар страница'
+        verbose_name_plural = 'Сайдбар страницы'

@@ -18,11 +18,14 @@ def in_theme(r, pk):
 
 class AddTheme(CreateView):
     form_class = ThemeForm
-    context_object_name = 'new_theme'
     template_name = 'forum/add_theme.html'
 
-"""def post_page(r, pk):
-    post = Post.objects.get(pk=pk)
-    context = {'post': post}
-    return render(r, 'forum/post.html', context=context)"""
 
+"""def add_theme(r):
+    form = ThemeForm()
+    if r.method == 'POST':
+        if form.is_valid():
+            form.save()
+    context = {'form': form}
+    return render(r, 'forum/add_theme.html', context=context)
+"""
