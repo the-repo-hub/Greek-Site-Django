@@ -34,3 +34,7 @@ class Sidebar(models.Model):
     class Meta:
         verbose_name = 'Сайдбар страница'
         verbose_name_plural = 'Сайдбар страницы'
+
+    def __str__(self):
+        return self.head
+
